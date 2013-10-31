@@ -7,8 +7,12 @@
 //
 
 #import "RNViewController.h"
+#import "RandomSequence.h"
 
 @interface RNViewController ()
+
+@property (nonatomic, strong) RandomSequence *randomSequence;
+- (void)nextRandom;
 
 @end
 
@@ -18,12 +22,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.randomSequence = [RandomSequence defaultSequence];
+    [self nextRandom];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)randomButtonPress:(id)sender
+{
+    [self nextRandom];
+}
+
+- (void)nextRandom
+{
+    // Generate numbers in the range of [0 100]
+    self.label.text = [NSString stringWithFormat:@"%lu", (unsigned long)[self.randomSequence nextIntegerInRange:NSMakeRange(0, 101)]];
 }
 
 @end

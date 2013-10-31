@@ -1,0 +1,10 @@
+PODS:
+  - RandomSequence (1.0.1)
+
+DEPENDENCIES:
+  - RandomSequence (= 1.0.1)
+
+SPEC CHECKSUMS:
+  RandomSequence: b6e411993950a4f1961f0c8ff75f95b1718831b6
+
+COCOAPODS: 0.27.1

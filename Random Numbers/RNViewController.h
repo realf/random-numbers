@@ -10,4 +10,8 @@
 
 @interface RNViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)randomButtonPress:(id)sender;
+
 @end
