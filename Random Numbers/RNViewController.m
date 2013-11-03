@@ -18,11 +18,20 @@
 
 @implementation RNViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder])
+    {
+        _randomSequence = [RandomSequence defaultSequence];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.randomSequence = [RandomSequence defaultSequence];
     [self nextRandom];
 }
 
