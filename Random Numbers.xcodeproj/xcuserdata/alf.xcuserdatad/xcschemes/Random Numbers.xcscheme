@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Random Numbers.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "75EF7AFB1826983100A7F433"
+               BuildableName = "RandomSequence Tests.xctest"
+               BlueprintName = "RandomSequence Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

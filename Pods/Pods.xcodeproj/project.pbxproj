@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		052D47D290ED40C9B7A10276 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B7F456236C4217B135A1AD /* Pods-dummy.m */; };
+		75EF7AFE1826983100A7F433 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EF7AFD1826983100A7F433 /* XCTest.framework */; };
+		75EF7B001826983100A7F433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EF7AFF1826983100A7F433 /* Foundation.framework */; };
+		75EF7B021826983100A7F433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EF7B011826983100A7F433 /* UIKit.framework */; };
+		75EF7B081826983100A7F433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75EF7B061826983100A7F433 /* InfoPlist.strings */; };
+		75EF7B0A1826983100A7F433 /* RandomSequence_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EF7B091826983100A7F433 /* RandomSequence_Tests.m */; };
+		75EF7B1118269B1F00A7F433 /* RandomSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F4CA49E5A64F6299249E0B /* RandomSequence.m */; };
 		7600CD0F82D94801A32B7BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA135CCD4CB4EB890CC4B8B /* Foundation.framework */; };
 		7672C9ADA8D94BFEA455337D /* RandomSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F4CA49E5A64F6299249E0B /* RandomSequence.m */; };
 		B4A73841835F4F19A6AA59E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA135CCD4CB4EB890CC4B8B /* Foundation.framework */; };
@@ -17,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		75EF7B0C1826983100A7F433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD67D08229D045C5BBDC4C0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 406D709541F54465B1CAF46D;
+			remoteInfo = "Pods-RandomSequence";
+		};
 		C9FC193CC62B47E49DA7AF7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD67D08229D045C5BBDC4C0B /* Project object */;
@@ -32,6 +45,14 @@
 		30B7F456236C4217B135A1AD /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		511F031D4459462B93E054B4 /* Pods-RandomSequence-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RandomSequence-dummy.m"; sourceTree = "<group>"; };
 		64F4CA49E5A64F6299249E0B /* RandomSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RandomSequence.m; path = RandomSequence/RandomSequence.m; sourceTree = "<group>"; };
+		75EF7AFC1826983100A7F433 /* RandomSequence Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RandomSequence Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EF7AFD1826983100A7F433 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75EF7AFF1826983100A7F433 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75EF7B011826983100A7F433 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		75EF7B051826983100A7F433 /* RandomSequence Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RandomSequence Tests-Info.plist"; sourceTree = "<group>"; };
+		75EF7B071826983100A7F433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75EF7B091826983100A7F433 /* RandomSequence_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomSequence_Tests.m; sourceTree = "<group>"; };
+		75EF7B0B1826983100A7F433 /* RandomSequence Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomSequence Tests-Prefix.pch"; sourceTree = "<group>"; };
 		8F1BDE3037EB45CC8159F887 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
 		9CA223F4300A477E934BA316 /* Pods-RandomSequence-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RandomSequence-prefix.pch"; sourceTree = "<group>"; };
 		A3E89CA618D3464484127808 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -46,6 +67,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		75EF7AF91826983100A7F433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EF7AFE1826983100A7F433 /* XCTest.framework in Frameworks */,
+				75EF7B021826983100A7F433 /* UIKit.framework in Frameworks */,
+				75EF7B001826983100A7F433 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D814A2F0C3464614B9A030C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +112,7 @@
 			children = (
 				E154709328D74730B45F396F /* libPods.a */,
 				B1BD4738D5074D5AB6DA4386 /* libPods-RandomSequence.a */,
+				75EF7AFC1826983100A7F433 /* RandomSequence Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +123,25 @@
 				AEA135CCD4CB4EB890CC4B8B /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		75EF7B031826983100A7F433 /* RandomSequence Tests */ = {
+			isa = PBXGroup;
+			children = (
+				75EF7B091826983100A7F433 /* RandomSequence_Tests.m */,
+				75EF7B041826983100A7F433 /* Supporting Files */,
+			);
+			path = "RandomSequence Tests";
+			sourceTree = "<group>";
+		};
+		75EF7B041826983100A7F433 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EF7B051826983100A7F433 /* RandomSequence Tests-Info.plist */,
+				75EF7B061826983100A7F433 /* InfoPlist.strings */,
+				75EF7B0B1826983100A7F433 /* RandomSequence Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9066FFF943094B079FF196EA /* Support Files */ = {
@@ -108,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				D058B6CDC5BB499ABB32A6CB /* Podfile */,
+				75EF7B031826983100A7F433 /* RandomSequence Tests */,
 				E23B065AF5564928BA176BD6 /* Frameworks */,
 				F09F6C7372FC4E7AA2F7B9E4 /* Pods */,
 				2A80280B07F64759B30FA6F2 /* Products */,
@@ -140,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				3A27BE7C56C04F1085027E7D /* iOS */,
+				75EF7AFD1826983100A7F433 /* XCTest.framework */,
+				75EF7AFF1826983100A7F433 /* Foundation.framework */,
+				75EF7B011826983100A7F433 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,6 +255,24 @@
 			productReference = E154709328D74730B45F396F /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		75EF7AFB1826983100A7F433 /* RandomSequence Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EF7B101826983100A7F433 /* Build configuration list for PBXNativeTarget "RandomSequence Tests" */;
+			buildPhases = (
+				75EF7AF81826983100A7F433 /* Sources */,
+				75EF7AF91826983100A7F433 /* Frameworks */,
+				75EF7AFA1826983100A7F433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75EF7B0D1826983100A7F433 /* PBXTargetDependency */,
+			);
+			name = "RandomSequence Tests";
+			productName = "RandomSequence Tests";
+			productReference = 75EF7AFC1826983100A7F433 /* RandomSequence Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +280,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					75EF7AFB1826983100A7F433 = {
+						TestTargetID = 406D709541F54465B1CAF46D;
+					};
+				};
 			};
 			buildConfigurationList = 77A92F58F511477FAAB5C845 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,9 +300,21 @@
 			targets = (
 				44C21671F84D4658BC26C469 /* Pods */,
 				406D709541F54465B1CAF46D /* Pods-RandomSequence */,
+				75EF7AFB1826983100A7F433 /* RandomSequence Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75EF7AFA1826983100A7F433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EF7B081826983100A7F433 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BC7B2AB1A7D47F5B14F835E /* Sources */ = {
@@ -233,6 +323,15 @@
 			files = (
 				DCE1278FD557449096CED286 /* Pods-RandomSequence-dummy.m in Sources */,
 				7672C9ADA8D94BFEA455337D /* RandomSequence.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EF7AF81826983100A7F433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EF7B0A1826983100A7F433 /* RandomSequence_Tests.m in Sources */,
+				75EF7B1118269B1F00A7F433 /* RandomSequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,12 +346,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		75EF7B0D1826983100A7F433 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 406D709541F54465B1CAF46D /* Pods-RandomSequence */;
+			targetProxy = 75EF7B0C1826983100A7F433 /* PBXContainerItemProxy */;
+		};
 		7A4FE6B3247241848539A18A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 406D709541F54465B1CAF46D /* Pods-RandomSequence */;
 			targetProxy = C9FC193CC62B47E49DA7AF7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75EF7B061826983100A7F433 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EF7B071826983100A7F433 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1B0C8F05ABFB47409759A5A4 /* Debug */ = {
@@ -341,6 +456,52 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75EF7B0E1826983100A7F433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomSequence Tests/RandomSequence Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RandomSequence Tests/RandomSequence Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75EF7B0F1826983100A7F433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomSequence Tests/RandomSequence Tests-Prefix.pch";
+				INFOPLIST_FILE = "RandomSequence Tests/RandomSequence Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -450,6 +611,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		75EF7B101826983100A7F433 /* Build configuration list for PBXNativeTarget "RandomSequence Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EF7B0E1826983100A7F433 /* Debug */,
+				75EF7B0F1826983100A7F433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		77A92F58F511477FAAB5C845 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
