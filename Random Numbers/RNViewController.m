@@ -49,7 +49,7 @@
 - (void)nextRandom
 {
     // Generate numbers in the range of [1 100]
-    self.label.text = [NSString stringWithFormat:@"%lu", (unsigned long)[self.randomSequence nextIntegerInRange:NSMakeRange(1, 101)]];
+    self.label.text = [NSString stringWithFormat:@"%lu", (unsigned long)[self.randomSequence nextIntegerInRange:NSMakeRange(1, 100)]];
 }
 
 @end
