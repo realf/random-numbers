@@ -33,6 +33,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self nextRandom];
+    self.fromValue.delegate = self;
+    self.toValue.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,10 +48,41 @@
     [self nextRandom];
 }
 
+- (BOOL)validateValuesFrom:(NSInteger)aFrom to:(NSInteger)aTo
+{
+    BOOL result = YES;
+    if (aFrom < 0 || aTo < 0 || aFrom > aTo)
+    {
+        result = NO;
+    }
+    
+    return result;
+}
+
 - (void)nextRandom
 {
-    // Generate numbers in the range of [1 100]
-    self.label.text = [NSString stringWithFormat:@"%lu", (unsigned long)[self.randomSequence nextIntegerInRange:NSMakeRange(1, 100)]];
+    NSInteger from = self.fromValue.text.integerValue;
+    NSInteger to = self.toValue.text.integerValue;
+    
+    if (![self validateValuesFrom:from to:to])
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong values" message:@"Values should be positive, From should not be greater than To" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    // Generate numbers in the range of [from to]
+    self.label.text = [NSString stringWithFormat:@"%lu", (unsigned long)[self.randomSequence nextIntegerInRange:NSMakeRange(from, to)]];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.fromValue || textField == self.toValue)
+    {
+        return [textField resignFirstResponder];
+    }
+    
+    return NO;
 }
 
 @end

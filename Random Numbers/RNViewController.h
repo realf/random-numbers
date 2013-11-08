@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RNViewController : UIViewController
+@interface RNViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextField *fromValue;
+@property (weak, nonatomic) IBOutlet UITextField *toValue;
 
 - (IBAction)randomButtonPress:(id)sender;
 
